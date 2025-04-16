@@ -1,0 +1,1 @@
+web: java -jar target/dependency/webapp-runner.jar --port $PORT target/BehasAccProj_rev1-1.0-SNAPSHOT.war
