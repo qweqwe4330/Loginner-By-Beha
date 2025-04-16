@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: loginner-by-beha
+    env: java
+    buildpacks:
+      - heroku/java
+    repo: https://github.com/qweqwe4330/Loginner-By-Beha.git
+    buildCommand: mvn clean package
+    startCommand: java -jar target/dependency/webapp-runner.jar --port $PORT target/BehasAccProj_rev1-1.0-SNAPSHOT.war
